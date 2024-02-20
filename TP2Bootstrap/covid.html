@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="iso-8859-1">
+    <meta name="description" content="Ejemplo de HTML5">
+    <title>Diario Agenda Digital</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/miestilo.css">
+    <link rel="shortcut icon" type="image/x-icon" href="imagenes/logo.png">
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <span class="navbar-text">
+                <img src="imagenes/agenda.png" width="30" height="30" class="d-inline-block align-top">
+                Agenda Digital
+                <time datetime="2020-04-20">20 de Abril de 2020</time>
+            </span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Principal<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="finanza.html">Finanzas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="zoodiaco.html">Horóscopo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="covid.html">Covid19</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <br>
+
+        <div class="card">
+            <div class="card-header text-center">
+                Estadísticas de COVID19
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="row">
+                        <div class="col-md-6 offset-md-3">
+                            <div class="col-md-12">
+                                <div class="form-group row">
+                                    <label for="txtDe" class="col-md-2">País</label>
+                                    <select class="form-control form-control-sm col-md-10">
+                                    <option>Argentina</option>
+                                    <option>Bolivia</option>
+                                    <option>Brasil</option>
+                                    <option>Chile</option>
+                                    <option>Colombia</option>
+                                    <option>Ecuador</option>
+                                    <option>Paraguay</option>
+                                    <option>Peru</option>
+                                    <option>Uruguay</option>
+                                    <option>Venezuela</option>
+                                </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Casos confirmados</label>
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Curados</label>
+                                </div>
+                                <div class="form-group form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Fallecidos</label>
+                                </div>
+                            </div>
+                            <button type="submit" class=" col-sm-12 btn btn-primary btn-sm">Consultar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <br>
+        <div class="alert alert-info text-center" role="alert">
+            <h4>Listado de países afectados</h4>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-striped" cellpadding="6">
+                <thead>
+                    <tr>
+                        <th>País</th>
+                        <th>Infectados</th>
+                        <th>Curados</th>
+                        <th>Fallecidos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Argentina</td>
+                        <td>2.930</td>
+                        <td>708</td>
+                        <td>134</td>
+                    </tr>
+                    <tr>
+                        <td>Bolivia</td>
+                        <td>564</td>
+                        <td>31</td>
+                        <td>33</td>
+                    </tr>
+                    <tr>
+                        <td>Brasil</td>
+                        <td>39.144</td>
+                        <td>22.130</td>
+                        <td>2.484</td>
+                    </tr>
+                    <tr>
+                        <td>Chile</td>
+                        <td>Celda 2</td>
+                        <td>Celda 2</td>
+                        <td>Celda 2</td>
+                    </tr>
+                    <tr>
+                        <td>Colombia</td>
+                        <td>Celda 2</td>
+                        <td>Celda 2</td>
+                        <td>Celda 2</td>
+                    </tr>
+                    <tr>
+                        <td>Ecuador</td>
+                        <td>Celda 2</td>
+                        <td>Celda 2</td>
+                        <td>Celda 2</td>
+                    </tr>
+                    <tr>
+                        <td>Paraguay</td>
+                        <td>Celda 2</td>
+                        <td>Celda 2</td>
+                        <td>Celda 2</td>
+                    </tr>
+                    <tr>
+                        <td>Perú</td>
+                        <td>Celda 2</td>
+                        <td>Celda 2</td>
+                        <td>Celda 2</td>
+                    </tr>
+                    <tr>
+                        <td>Uruguay</td>
+                        <td>Celda 2</td>
+                        <td>Celda 2</td>
+                        <td>Celda 2</td>
+                    </tr>
+                    <tr>
+                        <td>Venezuela</td>
+                        <td>Celda 2</td>
+                        <td>Celda 2</td>
+                        <td>Celda 2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <br>
+        <footer>
+            <div class="alert alert-primary text-right pie" role="alert">
+                Ariel Mamaní
+                <p> Programación Visual</p>
+            </div>
+        </footer>
+
+    </div>
+    <!--fin container-->
+
+    <script src="node_modules\jquery\dist\jquery.min.js"></script>
+    <script src="node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <!--<script src="node_modules\jquery\dist\jquery.slim.min.js"></script>-->
+    <script src="node_modules\bootstrap\dist\js\bootstrap.min.js"></script>
+
+</body>
+
+</html>

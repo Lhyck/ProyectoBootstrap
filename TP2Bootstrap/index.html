@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="iso-8859-1">
+    <meta name="description" content="Ejemplo de HTML5">
+    <title>Diario Agenda Digital</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/miestilo.css">
+    <link rel="shortcut icon" type="image/x-icon" href="imagenes/logo.png">
+</head>
+<body>
+    <div class="container-fluid fondo">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <span class="navbar-text tituloLogo">
+                <img src="imagenes/agenda.png" width="30" height="30" class="d-inline-block align-top">
+                Agenda Digital
+                <time datetime="2020-04-20">20 de Abril de 2020</time>
+            </span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0 ">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Principal<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="finanza.html">Finanzas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="zoodiaco.html">Horóscopo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="covid.html">Covid19</a>
+                    </li>                
+                </ul>                
+            </div>
+        </nav><!--fin menú-->
+        
+        <br>
+        <h2 class="offset-md-3">Últimas noticias</h2>
+        <div class="row"><!--Zona central-->        
+        <section class="col-md-9">            
+            <div class="row"><!--fila1-->
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="imagenes\coronavirus.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#">
+                            <h4><span class="badge badge-danger">Coronavirus en Argentina</span></h4>
+                            </a>
+                            <p class="card-text">Los contagios hasta anoche eran 2.941, mas de 50.000 personas sancionadas y unos 170.000 argentinos repatriados.</p>                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                    <img src="imagenes\inflacion.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <a href="#">
+                            <h4><span class="badge badge-danger">Inflación</span></h4>
+                        </a>
+                        <p class="card-text">La inflación en Jujuy subió más de dos puntos porcentuales y fue de 4,6% en marzo sobre media nacional.</p>                        
+                    </div>
+                    </div>
+                </div>
+            </div><!--fin fila 1-->
+            <br>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="imagenes\creditos.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#">
+                            <h4><span class="badge badge-danger">Créditos</span></h4>
+                            </a>
+                            <p class="card-text">Se otorgarán créditos a tasa del 0% para monotributistas y para trabajadores autónomos.</p>                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="imagenes\dengue.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <a href="#">
+                            <h4><span class="badge badge-danger">Dengue en Jujuy</span></h4>
+                            </a>
+                            <p class="card-text">En la última jornada, el ministro de Salud Gustavo Bouhid confirmó la declaración de emergencia sanitaria por dengue en Jujuy.</p>                            
+                        </div>
+                    </div>
+                </div>
+            </div><!--fin fila 2-->
+            
+        </section>    
+
+        <aside class="col-md-3">
+            <img src="imagenes\quedate-.jpg" class="card-img-top" alt="...">
+            <br>
+            <img src="imagenes\ledesma.jpg" class="card-img-top" alt="...">
+        </aside>
+
+        </div>
+        <br>
+        <footer>
+            <div class="alert alert-primary text-right pie" role="alert">
+                Ariel Mamaní
+                <p> Programación Visual</p>
+            </div>                
+        </footer>
+
+    </div><!--fin container-->
+    
+    <script src="node_modules\jquery\dist\jquery.min.js"></script>    
+    <script src="node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <!--<script src="node_modules\jquery\dist\jquery.slim.min.js"></script>-->
+    <script src="node_modules\bootstrap\dist\js\bootstrap.min.js"></script>    
+
+</body>
+</html>

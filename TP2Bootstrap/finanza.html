@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="iso-8859-1">
+    <meta name="description" content="Ejemplo de HTML5">
+    <title>Diario Agenda Digital</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/miestilo.css">
+    <link rel="shortcut icon" type="image/x-icon" href="imagenes/logo.png">
+</head>
+<body>
+    <div class="container-fluid">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <span class="navbar-text">
+                <img src="imagenes/agenda.png" width="30" height="30" class="d-inline-block align-top">
+                Agenda Digital
+                <time datetime="2020-04-20">20 de Abril de 2020</time>
+            </span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" 
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0 ">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Principal<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Finanzas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="zoodiaco.html">Horóscopo</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="covid.html">Covid19</a>
+                    </li>                
+                </ul>                
+            </div>
+        </nav>
+        <br>
+        <div class="row">
+        <section class="col-md-8">
+            <div class="card">
+            <div class="card-header text-center conversor">
+                <h5 class="card-title">Conversor de Divisas</h5>
+            </div>
+            <div class="card-body">                
+                <table class="exchange" cellpadding="3" >                    
+                    <thead>                    
+                    <tr class="bg-primary bordes ">
+                        <th></th>
+                        <th>Peso Arg</th>
+                        <th>Dolar US</th>
+                        <th>Euro</th>
+                        <th>Yen</th>
+                        <th>Real</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="bordes">
+                        <td rowspan="2">Peso Ar</td>                        
+                        <td>1.000000</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>                        
+                    </tr>
+                    <tr class="bordes">
+                        <td> 1.000000</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>                        
+                    </tr>
+                    <tr class="bordes">
+                        <td rowspan="2">Dolar US</td>
+                        <td></td>
+                        <td>1.000000</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="bordes">
+                        <td></td>
+                        <td>1.000000</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>                        
+                    </tr>
+                    <tr class="bordes">
+                        <td rowspan="2">Euro</td>
+                        <td></td>
+                        <td></td>
+                        <td>1.000000</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr class="bordes">
+                        <td></td>
+                        <td></td>
+                        <td>1.000000</td>
+                        <td></td>
+                        <td></td>                        
+                    </tr>
+                    <tr class="bordes">
+                        <td rowspan="2">Yen</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>1.000000</td>
+                        <td></td>
+                    </tr>
+                    <tr class="bordes">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>1.000000</td>
+                        <td></td>                        
+                    </tr>
+                    <tr class="bordes">
+                        <td rowspan="2">Real</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>1.000000</td>
+                    </tr>
+                    <tr class="bordes">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>1.000000</td>
+                    </tr>
+                    </tbody>
+                </table>            
+            </div>
+            </div>
+        </section>
+
+        <aside class="col-md-4">
+            <div class="card">
+                <div class="card-header text-center conversor">
+                    Conversor de divisas
+                </div>
+                <div class="card-body bg-primary">
+                    <form>
+                        <div class="form-group">
+                            <label for="txtcantidad">Cantidad</label>
+                            <input type="number" class="form-control form-control-sm" id="txtcantidad" aria-describedby="emailHelp">                            
+                        </div>
+                        <div class="form-group">
+                            <label for="txtDe">De</label>
+                            <select class="form-control form-control-sm">
+                                <option>Peso Argentino</option>
+                                <option>Dolar US</option>
+                                <option>Real</option>
+                                <option>Euro</option>
+                                <option>Yen</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtA">A</label>
+                            <select class="form-control form-control-sm">
+                                <option>Peso Argentino</option>
+                                <option>Dolar US</option>
+                                <option>Real</option>
+                                <option>Euro</option>
+                                <option>Yen</option>
+                            </select>
+                        </div>
+                        <div class="form-group">                            
+                            <input type="password" class="form-control" readonly id="txtA">
+                        </div>
+                        <button type="submit" class=" col-sm-12 btn btn-warning btn-sm">Convertir</button>
+                    </form>
+                </div>
+            </div>
+        </aside>
+        </div><!--fin fila central-->
+        
+        <br>
+        <footer>
+            <div class="alert alert-primary text-right pie" role="alert">
+                Ariel Mamaní
+                <p> Programación Visual</p>
+            </div>                
+        </footer>
+
+    </div><!--fin container-->
+    
+    <script src="node_modules\jquery\dist\jquery.min.js"></script>    
+    <script src="node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <!--<script src="node_modules\jquery\dist\jquery.slim.min.js"></script>-->
+    <script src="node_modules\bootstrap\dist\js\bootstrap.min.js"></script>    
+
+</body>
+</html>

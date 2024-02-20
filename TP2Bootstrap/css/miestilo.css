@@ -1,0 +1,65 @@
+body{
+background: -webkit-gradient(linear, left top, left bottom, from(white), to(gray));
+}
+
+.tituloLogo{
+  font: 'Yanone Kaffeesatz' 19px bold;
+}
+
+time{
+  color: black;
+  margin-left: 20px;
+}
+
+.active{
+  font: bold;
+}
+
+.imagenzoo{
+  width: 5em
+}
+
+.nav-item{
+  padding-left: 6px;
+padding-right: 6px
+}
+
+.nav-item:hover{
+background: blue;
+}
+
+.titulocard{
+  color: white;
+  font: 24px Calibri bold;
+  background: -webkit-gradient(linear, left top, left bottom, from(darkseagreen), to(darkslategrey));
+}
+
+.conversor{
+  background: navy;
+  color: white
+}
+
+.exchange{
+  font-size: 14px;
+  width: 100%
+}
+
+table thead tr{
+  background: cornflowerblue
+}
+
+.bordes{
+  border-bottom: solid 1px;
+}
+
+.zootarjeta{
+  width: 7em
+}
+
+.pie{    
+  padding: 10px;
+  font: 'Yanone Kaffeesatz', arial, sans-serif;  
+  color: #FFF;
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(darkslategrey));
+  background: -moz-linear-gradient(top,  black,  darkgray);
+}
